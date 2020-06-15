@@ -1,0 +1,12 @@
+<p>
+    {{quote.author}}
+</p>
+<p>
+    {{quote.yourName}}
+</p>
+<p>This quote was created in {{quote.postedDate|dateCount}} days</p>
+<p class="upvotes capitalize ">Upvotes: {{ qoute.upvotes }}</p>
+<button type="button" class="btn btn-outline-success" (click)="addUpvotes()">Upvote</button>
+<p class="downvotes capitalize">Downvotes: {{ qoute.downvotes }}</p>
+<button type="button" class="btn btn-outline-warning" (click)="addDownvotes()">Downvote</button><br>
+<button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
